@@ -20,7 +20,7 @@ pipeline {
 			}
 		}
 		stage("show readme"){
-			stage{
+			steps{
 				sh "cat README.md"
 			}
 		}
