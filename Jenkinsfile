@@ -15,11 +15,14 @@ pipeline {
 		}
 
 		stage("show fieles"){
-			sh "ls"
+			steps{
+				sh "ls"
+			}
 		}
 		stage("show readme"){
-			sh "cat README.md"
+			stage{
+				sh "cat README.md"
+			}
 		}
-
 	}
 }
